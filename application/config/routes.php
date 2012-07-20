@@ -46,9 +46,9 @@ $route['edit'] = 'docs/edit_form';
 $route['edit/(:any)'] = 'docs/edit_form';
 
 $hostname = 'localhost';
-$username = 'appdevadmin';
-$password = 'd3vm4tic';
-$database = 'ads';
+$username = '';
+$password = '';
+$database = '';
 $dbLink = mysqli_connect($hostname, $username, $password, $database);
 
 $sql = "SELECT * FROM ads_resource_areas";
