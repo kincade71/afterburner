@@ -17,7 +17,7 @@ class Ab extends CI_Controller {
 	{	
 		$this->data['current_page'] = 'Set Up Your Documentation Creator';
 		$this->data['content'] = 'index';
-		$this->data['page_title'] = 'ODS Documentation';
+		$this->data['page_title'] = '';
 		$this->load->view('template', $this->data);
 	}
 }

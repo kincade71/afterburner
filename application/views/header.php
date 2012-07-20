@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?= (isset($page_title))?$page_title:'ODS Documentation' ?></title>
+<title><?= (isset($page_title))?$page_title:$page_title.' Documentation' ?></title>
 
 <link rel="stylesheet" href="<?php echo base_url() ?>css/userguide.css" />
 <link rel="stylesheet" href="<?php echo base_url() ?>css/cidocs.css" />
@@ -21,7 +21,7 @@
 		<td class="td" valign="top">
 
 		<ul>
-		<li><a href="<?= base_url() ?>">ODS Documentation Home</a></li>
+		<li><a href="<?= base_url() ?>"><?= $page_title ?> Documentation Home</a></li>
 		<li><a href="<?= base_url() ?>toc">Table of Contents Page</a></li>
 		</ul>
 		
@@ -55,7 +55,7 @@
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>OIR Data Store (ODS) Documentation</h1></td>
+<td><h1><?= $page_title ?> Documentation</h1></td>
 <td id="breadcrumb_right"><a href="javascript:void(0);">Table of Contents Page</a></td>
 </tr>
 </table>
@@ -66,7 +66,7 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
 <td id="breadcrumb">
-<a href="<?= base_url() ?>/docs">OIR Data Store Documentation Home</a> &nbsp;&#8250;&nbsp; <?= (isset($current_page))?$current_page:'ODS Documentation User Guide' ?>
+<a href="<?= base_url() ?>/docs"><?= $page_title ?> Documentation Home</a> &nbsp;&#8250;&nbsp; <?= (isset($current_page))?$current_page:$page_title.' Documentation User Guide' ?>
 </td>
 <td id="searchbox"></td>
 </tr>
@@ -76,7 +76,7 @@
 
 <br clear="all" />
 
-<div class="center"><img src="<?= base_url() ?>images/Large_OIRLogo.png" width="150" height="164" border="0" alt="ODS Documentation" /></div>
+<div class="center"><img src="<?= base_url() ?>images/Large_OIRLogo.png" width="150" height="164" border="0" alt="<?= $page_title ?> Documentation" /></div>
 
 
 <!-- START CONTENT -->
