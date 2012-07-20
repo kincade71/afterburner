@@ -27,4 +27,4 @@ are available.
 
 ## Donations
 
-Developed by Daniel Burke, [ECPI University, Office of Institutaional Research](http://www.ecpi.edu)
+Developed by Daniel Burke, [D2 Development](http://www.d2burke.com)
