@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+.doc_create_form{
+	position:relative;
+	width:910px;
+	margin:0 auto;
+}
+.doc_select{
+	float:left;
+	width:186px;
+	margin:2px 0 10px 2px;
+	font-size:1.1em;
+}
+.doc_select_container{
+	float:left;
+	width:190px;
+	height:28px;
+	margin-right:10px;
+	padding:3px;
+	font-size:1.1em;
+	border:solid 1px #999;
+}
+.doc_add_btn{
+	position:relative;
+	float:left;
+	width:28px;
+	height:28px;
+	margin-right:10px;
+	padding:3px;
+	font-size:1.1em;
+	border:solid 1px #CCC;
+	background:url(../images/CIDocsAddBtn.png);
+}
+.doc_add_btn:hover{
+	background-position:0 34px;
+}
+.doc_add_field{
+	position:absolute;
+	width:300px;
+	height:50px;
+	left:76px;
+	top:28px;
+	background:url(../images/CIAddField.png);
+	display:none;
+	z-index:100;
+}
+	.doc_add_field .field{
+		position:absolute;
+		width:250px;
+		height:24px;
+		top:15px;
+		left:5px;
+		z-index:0;
+	}
+	.doc_add_field_btn{
+		position:absolute;
+		top:15px;
+		width:28px;
+		height:28px;
+		padding:0;
+		margin:0;
+		left:264px;
+		background:url(../images/CIDocsAddBtnSmall.png) ;
+		border:solid 1px #CCC;
+		z-index:1;
+	}
+.doc_create_btn{
+	float:right;
+	width:100px;
+	height:28px;
+	margin:5px 4px 0 10px;
+	padding:3px;
+	font-size:1.1em;
+	border:solid 1px #CCC;
+	background:url(../images/CIDocsCreateBtn.png);
+}
+.doc_create_message{
+	float:left;
+	height:28px;
+	margin:5px 0 0 0;
+	padding:6px 10px 0;
+	font-size:1.1em;
+	color:#090;
+	display:none;
+}
+
+.doc_create_btn:hover{
+	background-position:0 -34px;
+}
+.doc_update_btn{
+	float:right;
+	width:100px;
+	height:28px;
+	margin:5px 4px 0 10px;
+	padding:3px;
+	font-size:1.1em;
+	border:solid 1px #CCC;
+	background:url(../images/CIDocsCreateBtn.png) 0 -68px;
+}
+.doc_update_btn:hover{
+	background-position:0 -102px;
+}
+
+.doc_input{
+	float:left;
+	width:342px;
+	height:26px;
+	margin:0 0 10px 0;
+	padding:3px;
+}
+.doc_text{
+	float:left;
+	clear:left;
+	width:910px;
+	height:400px;
+	margin:5px 0 0 0;
+}
+
+
+/*/////////////////////////////////////////////*/
+.nav_create_btn{
+	float:left;
+	width:162px;
+	height:42px;
+	text-decoration:none;
+	background:url(../images/ABCreateBtn.png);
+}
+.nav_create_btn:hover{
+	background-position:0 42px;
+}
+
+.mceEditor {
+	float:left;
+	clear:left;
+}
+
+
+/*/////////////////////////////////////////////*/
+.red{
+	color:#F00;
+}
+.green{
+	color:#090;
+}
