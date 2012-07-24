@@ -44,10 +44,10 @@ $active_record = TRUE;
 /*
  *	CONNECTING TO THE APPLICATION DATABASE
  */
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'appdevadmin';
-$db['default']['password'] = 'd3vm4tic';
-$db['default']['database'] = 'ads';
+$db['default']['hostname'] = '';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -45,40 +45,5 @@ $route['create'] = 'docs/create_form';
 $route['edit'] = 'docs/edit_form';
 $route['edit/(:any)'] = 'docs/edit_form';
 
-$hostname = 'localhost';
-$username = '';
-$password = '';
-$database = '';
-$dbLink = mysqli_connect($hostname, $username, $password, $database);
-
-$sql = "SELECT * FROM ads_resource_areas";
-$result = mysqli_query($dbLink, $sql);
-if($result && mysqli_num_rows($result)>0){
-	while($row=mysqli_fetch_array($result)){
-		$resource = str_replace(" ", "_", $row['ResourceArea']);
-		$resource = strtolower($resource);
-		$route[$resource] = 'docs/view_resource/'.$resource;
-	}
-}
-
-$sql = "SELECT * FROM ads_doc_items JOIN ads_resource_areas ON ads_resource_areas.ResourceAreaId = ads_doc_items.ResourceAreaId";
-$result = mysqli_query($dbLink, $sql);
-if($result && mysqli_num_rows($result)>0){
-	while($row=mysqli_fetch_array($result)){
-		$resource = str_replace(" ", "_", $row['ResourceArea']);
-		$resource = strtolower($resource);
-		
-		$item = str_replace(" ", "_", $row['DocItem']);
-		$item = strtolower($item);
-		
-		$route[$resource.'/'.$item] = 'docs/view_doc/'.$resource.'/'.$item;
-	}
-}
-
-//echo '<pre>';
-//print_r($route);
-//echo '</pre>';
-
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

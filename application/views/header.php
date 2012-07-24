@@ -72,12 +72,7 @@
 </tr>
 </table>
 
-
-
 <br clear="all" />
-
-<div class="center"><img src="<?= base_url() ?>images/Large_OIRLogo.png" width="150" height="164" border="0" alt="<?= $page_title ?> Documentation" /></div>
-
 
 <!-- START CONTENT -->
 <div id="content">
